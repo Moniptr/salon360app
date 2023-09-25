@@ -5,17 +5,19 @@ import styles from "../header/header.module.css";
 import {Image } from "react-bootstrap";
 import Dropdown from 'react-bootstrap/Dropdown';
 import Container from "../../components/container/index";
+import Button from "../Button";
+import IcPlus from "../../design-system/icons/IcPlus";
 
 const Header=()=>{
     return(
-      <Container background="rgba(36, 40, 52, 1)" inline={true} >
+      <Container background="rgba(36, 40, 52, 1)" inline={true} width="100%" >
       <div className={styles.headermain}>
       
-      <div className="conainerhead d-flex align-items-center ml-4" > 
+      <div className="" > 
       <Image className={styles.parlourimage} src="/images/parlour.svg" />
       </div>
       <div className={styles.endsection}>
-      
+      <Button label="New Sale" />
       <Dropdown className=" mx-4" data-bs-theme="dark">
       <Dropdown.Toggle id="dropdown-button-dark-example1" variant="secondary">
       Trinity Saloon, Kharadi
@@ -30,10 +32,8 @@ const Header=()=>{
       </Dropdown.Menu>
       </Dropdown>
       <div className={styles.con1}>
-        
-           <p class={styles.icontext}>KB</p>
-
-     </div>
+        <p class={styles.icontext}>KB</p>
+      </div>
   </div>
       </div>
       </Container>

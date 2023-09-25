@@ -14,7 +14,6 @@ root.render(
     <Container padding="0  50px 50px 50px">
       {/*<App />*/}
       <Header/>
-      <Button btnIcon="/img/plus.svg" size="large" label="New Sale" />
     </Container>
   </React.StrictMode>
 );
