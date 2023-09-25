@@ -1,4 +1,4 @@
-// import styled, { css } from "styled-components";
+import styled, { css } from "styled-components";
 const theme = {
   fontSizes: {
     heading_l_medium: "30px",

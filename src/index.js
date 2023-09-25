@@ -1,32 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import Dashboard from "./dashboard";
-import Button from "./button";
-import Textheading from "./Textheading";
-import Descriptiontext from "./description";
-import Subhead from "./subHead";
-import Aboutus from "./about-us";
+// import App from "./App";
+import reportWebVitals from "./reportWebVitals"
+
 import "../node_modules/react-bootstrap/dist/react-bootstrap";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
+import Header from "./components/header";
+import Aboutus from "./about-us";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/*<App />*/}
-    {/* <Dashboard /> */}
-    <Button/>
-    <Button label= "click me now"/>
-    <Textheading/>
-    <Textheading Text="Know more about our Features"/>
-    <Descriptiontext/>
-    <Subhead/>
-    <Subhead subheading="Money and investment"/>
-    <Aboutus/>
+    {/* <App /> */}
+    {/* <Button/> */}
+    <Header/>
+    <Aboutus />
+    {/* <Dashboard/> */}
+    {/* <Aboutus/> */}
   </React.StrictMode>
 );
 
