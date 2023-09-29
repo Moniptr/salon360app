@@ -12,13 +12,12 @@ const Header=()=>{
     return(
       <Container background="rgba(36, 40, 52, 1)" inline={true} width="100%" >
       <div className={styles.headermain}>
-      
-      <div className="" > 
-      <Image className={styles.parlourimage} src="/images/parlour.svg" />
+      <div className={styles.parlourimage}> 
+      <Image src="/images/parlour.svg" />
       </div>
-      <div className={styles.endsection}>
-      <Button label="New Sale" />
-      <Dropdown className=" mx-4" data-bs-theme="dark">
+      <div className={styles.rightsection}>
+      <Button className="mx-2 my-3" label="New Sale" />
+      <Dropdown className=" mx-6 my-3" data-bs-theme="dark">
       <Dropdown.Toggle id="dropdown-button-dark-example1" variant="secondary">
       Trinity Saloon, Kharadi
       </Dropdown.Toggle>
@@ -31,13 +30,12 @@ const Header=()=>{
         <Dropdown.Item href="#/action-4">Separated link</Dropdown.Item>
       </Dropdown.Menu>
       </Dropdown>
-      <div className={styles.con1}>
+      <div className={styles.imageicon}>
         <p class={styles.icontext}>KB</p>
       </div>
   </div>
       </div>
       </Container>
-
-    )
+        )
 };
 export default Header; 
