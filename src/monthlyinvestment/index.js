@@ -1,54 +1,80 @@
-import {css} from "@emotion/react";
-/**@jsxImportSource @emotion/react */
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import {
+  Row,
+  Col,
+  Image,
+  ListGroup,
+} from "react-bootstrap";
 import styles from "../monthlyinvestment/monthlyinvest.module.css";
-import Container from "../components/container";
-import { Col, Image, Row } from "react-bootstrap";
 import Text from "../components/text";
+import Container from "../components/container";
 import Button from "../components/Button";
+import IcPlus from "../design-system/icons/IcPlus";
 
-const Monthly=()=>{
-    return(
-        <>
-        <Container>
-            <Row className={styles.monthlymain}>
-                <Col xxs={true} className={styles.monthlytextcol}>
-                <Text className={styles.monthlytext} text="Monthly Expenses & Inventory" appearance="heading_m_medium" color="white" />
+const Monthly = () => {
+  return (
+    <div>
+      <Container background="rgba(36, 40, 52, 1)">
+        <Row>
+          <Col md={8}>
+          <Text className={styles.monthlytext} text="Monthly Expenses & Inventory" appearance="heading_m_medium" color="white" />
                 <br/>
                 <Text text="Track your monthly expenses, including utilities, salaries, and" appearance="body_s_regular" color="white" />
                 <Text text="supplies. Stay on top of finances and make informed decisions" appearance="body_s_regular" color="white" />
-                <Text className={styles.textgap} text="about budgeting and cost-cutting." appearance="body_s_regular" color="white"/>
+                <Text text="about budgeting and cost-cutting." appearance="body_s_regular" color="white"/>
                 <br/>
-                <Text className={styles.monthlysecondtext}  text="Track product inventory, including the quantity, cost, and sales of" appearance="body_s_regular" color="white" />
-                <Text className={styles.monthlythreetext} text="each product & optimize your inventory levels and ensure that" appearance="body_s_regular" color="white" />
+                <Text text="Track product inventory, including the quantity, cost, and sales of" appearance="body_s_regular" color="white" />
+                <Text text="each product & optimize your inventory levels and ensure that" appearance="body_s_regular" color="white" />
                 <Text text="they you enough products to meet customer demand." appearance="body_s_regular" color="white" />
                 <br/>
-                <Button className={styles.monthlybutton} label="Know More"/>
-                </Col>
-                <Col xxs={true} className={styles.monthlyimage}>
-                    <Image src="/images/rectangleimage.png" width="499px" height="287px"/>
-                </Col>
-            </Row>
-        </Container>
+                <Button size="medium" icon = {<IcPlus />} label="Know more"></Button>
+          </Col>
 
-        <Container className={styles.secondcontainer}>
-            <Row className={styles.secondcontainerrow}>
-                <Col xxs={true} className={styles.secondcontimage} >
-                    <Image src="/images/rectangleimage.png" width="499px" height="287px"/>
-                </Col>
-                <Col xxs={true} className={styles.seconddescription} >
-                <Text className={styles.secondmontext}  text="Monthly Expenses & Inventory" appearance="heading_m_medium" color="white" />
+          <Col md={4} className="order-md-2 order-1">
+            <Image
+              src="/images/rectangleimage.png"
+              alt="Right Side Image"
+              fluid
+            />
+        
+          </Col>
+        </Row>
+
+        
+      </Container>
+
+      <Container background="rgba(36, 40, 52, 1)">
+        <Row>
+          
+
+          <Col md={4}>
+            <Image
+              src="/images/rectangleimage.png"
+              alt="Left Side Image"
+              fluid
+            />
+          </Col>
+
+          <Col md={8} className="order-md-2 order-1">
+          <Text className={styles.secondmontext} text="Monthly Expenses & Inventory" appearance="heading_m_medium" color="white" />
                 <br/>
-                <Text   text="Manage your employee information, including their salaries," appearance="body_s_regular" color="white" />
-                <Text text="commissions, and employment status. Also track commissions" appearance="body_s_regular" color="white" gap="20px" />
-                <Text text="earned by each employee on each product or service they sell." appearance="body_s_regular" color="white" />
-                <Text text="This helps you to determine how much to pay each employee" appearance="body_s_regular" color="white" />
-                <Text text="based on their sales performance." appearance="body_s_regular" color="white" />
+                <Text text="Track your monthly expenses, including utilities, salaries, and" appearance="body_s_regular" color="white" />
+                <Text text="supplies. Stay on top of finances and make informed decisions" appearance="body_s_regular" color="white" />
+                <Text text="about budgeting and cost-cutting." appearance="body_s_regular" color="white"/>
                 <br/>
-                <Button  label="Know More"/>
-                </Col>
-            </Row>
-        </Container>
-        </>
-    )
+                <Text text="Track product inventory, including the quantity, cost, and sales of" appearance="body_s_regular" color="white" />
+                <Text text="each product & optimize your inventory levels and ensure that" appearance="body_s_regular" color="white" />
+                <Text text="they you enough products to meet customer demand." appearance="body_s_regular" color="white" />
+                <br/>
+                <Button size="medium" icon = {<IcPlus/>} label="Know more"></Button>
+             </Col>
+        </Row>
+</Container>
+    </div>
+
+    
+  );
 };
-export default Monthly;
+
+export default Monthly;

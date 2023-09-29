@@ -8,16 +8,18 @@ import Container from "./components/container";
 import Button from "./components/Button";
 import Header from "./components/header";
 import Aboutus from "./about-us";
+// import Tryresponsive from "./Trial";
+import Knowmore from "./knowmorecontent";
 import Monthly from "./monthlyinvestment";
-import Tryresponsive from "./Trial";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
       <Header />
       <Aboutus />
-      <Monthly />
-      <Tryresponsive/>
+      <Monthly/>
+      {/* <Tryresponsive/> */}
+      <Knowmore/>
   </React.StrictMode>
 );
 

@@ -1,0 +1,17 @@
+.knowmaincontainer{
+    background-color: rgba(36, 40, 52, 1);
+}
+.knowmaincontainer h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.knowheading{
+    color:white ;
+}
+.knowboxes{
+    background-color:rgba(36, 40, 52, 1) ;
+    color:white ;
+}
+.knowcolumn{
+    margin: bottom 10px; 
+}

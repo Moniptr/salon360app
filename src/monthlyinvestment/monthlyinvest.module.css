@@ -1,45 +1,7 @@
-.monthlymain{
-
-}
 .monthlytext{
     line-height: 5vh;
 }
-.monthlytextcol{
-    padding-left: 42px;
-    float: left;
-    /* line-height: 1.2; */
-}
-.monthlyimage{
-    float: right;
-    line-height: 1.2;
-    padding-left: 600px;
-}
-
-/* .textgap{
-    line-height: 3.2;
-} */
-
-/* .monthlybutton{
-    line-height: 1.0;
-}  */
-/* Second section content
-
-.secondcontainer{
-    line-height: normal ;
-}
-/* .secondcontainerrow{
-    padding-left: 20%;
-} */
 .secondmontext{
     line-height: 2.7;
 }
-.seconddescription{
-    /* line-height:2.4; */
-    padding-left: 460px;
-    float: right;
-}
-.secondcontimage{
-    padding-left: 42px;
-    float: left;
-    line-height: 3.2;
-}
+
