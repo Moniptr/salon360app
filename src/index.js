@@ -11,6 +11,7 @@ import Aboutus from "./about-us";
 // import Tryresponsive from "./Trial";
 import Knowmore from "./knowmorecontent";
 import Monthly from "./monthlyinvestment";
+import Business from "./business partner";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,6 +21,7 @@ root.render(
       <Monthly/>
       {/* <Tryresponsive/> */}
       <Knowmore/>
+      <Business/>
   </React.StrictMode>
 );
 
