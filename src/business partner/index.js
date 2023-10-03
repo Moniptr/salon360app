@@ -2,13 +2,14 @@ import React from "react";
 import "../business partner/business.css";
 import { Col, Container, Form, Image, Row } from "react-bootstrap";
 import Text from "../components/text";
+import ButtonComponent from "../components/buttonC";
 
 const Business = ()=>{
     return(
         <>
         <div className="busimaincont">
         <Container className="busicontainer" >
-        <Row className="">
+        <Row className="busirow">
           <Col md={6} className=" busifirstcol">
           <Text text="Refer your Salon Business Partners" appearance="heading_m_medium" color="white" />
             <br/>
@@ -25,16 +26,17 @@ const Business = ()=>{
             <Text text="download App!" appearance="heading_m_medium" color="white" />
             </div>
             <div className="">
-                <Image src="/images/QR.png"/>
+                <Image src="/QR.png"/>
             </div>
           </div>
           </Col>
 
 
         <Col md={6} className="busisecondcol">
-            <Form>
-                
-            </Form>
+        
+     
+  
+            
         </Col>
         </Row>
         </Container>

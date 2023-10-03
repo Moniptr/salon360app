@@ -8,7 +8,7 @@ import {
 } from "react-bootstrap";
 import "../header/header.css";
 import IcPlus from "../../design-system/icons/IcPlus";
-import Button from "../Button/index";
+import ButtonComponent from "../buttonC/index";
 
 const Header = () => {
   return (
@@ -18,7 +18,7 @@ const Header = () => {
           <Image className="mx-0" src="/images/parlour.svg" alt="Logo" />
 
           <Navbar.Brand className=" mx-0 rightsection">
-            <Button size="medium" label="New Sale" icon={<IcPlus/>} />
+            <ButtonComponent size="medium" label="New Sale" icon={<IcPlus/>} />
 
             <Dropdown className=" mx-4 my-3" data-bs-theme="dark">
       <Dropdown.Toggle id="dropdown-button-dark-example1" variant="secondary">
@@ -39,10 +39,7 @@ const Header = () => {
           </Navbar.Brand>
         </Container>
       </Navbar>
-
-      
-        
-    </div>
+     </div>
   );
 };
 

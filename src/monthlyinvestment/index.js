@@ -8,7 +8,7 @@ import {
 import "../monthlyinvestment/monthly.css";
 import Text from "../components/text";
 import Container from "../components/container";
-import Button from "../components/Button";
+// import Button from "../components/Button";
 
 const Monthly = () => {
   return (
@@ -26,7 +26,7 @@ const Monthly = () => {
                 <Text text="each product & optimize your inventory levels and ensure that" appearance="body_s_regular" color="white" />
                 <Text text="they you enough products to meet customer demand." appearance="body_s_regular" color="white" />
                 <br/>
-                <Button size="medium" label="Know more" />
+                {/* <Button size="medium" label="Know more" /> */}
           </Col>
 
           <Col md={6}>
@@ -61,7 +61,7 @@ const Monthly = () => {
                 <Text text="each product & optimize your inventory levels and ensure that" appearance="body_s_regular" color="white" />
                 <Text text="they you enough products to meet customer demand." appearance="body_s_regular" color="white" />
                 <br/>
-                <Button size="medium" label="Know more" />
+                {/* <Button size="medium" label="Know more" /> */}
              </Col>
         </Row>
       </Container>

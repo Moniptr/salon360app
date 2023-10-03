@@ -21,4 +21,14 @@
 .knowcard{
     border: none;
 }
+/* Background image of knowmore */
+.Knowimage{
+    height:46px;
+    width:46px;
+    background-color: red !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 

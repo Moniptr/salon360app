@@ -9,7 +9,6 @@
 }
 .busifirstcol{
     color: white;
-    margin-left: 30px;
 }
 .busisecondcol{
     color: white;
@@ -17,5 +16,5 @@
 }
 .busifirstcolscan{
     display: flex;
-    gap: 190px;
+    gap: 150px;
 }
