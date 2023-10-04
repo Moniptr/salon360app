@@ -39,6 +39,9 @@
   color: #fff;
   padding-right: 30px;
 }
+.imageQR{
+  margin-right: 150px;
+}
 
 @media (max-width: 767px) {
   .interested-section {

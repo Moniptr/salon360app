@@ -30,7 +30,7 @@ import IcParlour from "../../design-system/icons/IcParlour";
 import About from "../about";
 import Knowmore from "../knowmore";
 
-function SideBar() {
+const SideBar=()=> {
   const [showSidebar, setShowSidebar] = useState(true);
 
   const toggleSidebar = () => {
@@ -48,27 +48,6 @@ function SideBar() {
             <Button onClick={toggleSidebar} className="d-md-none">
               ☰
             </Button>
-            <ButtonComponent label="New Sale" suffix={<IcPlus />} />
-            <Dropdown className=" mx-4 my-3" data-bs-theme="dark">
-              <Dropdown.Toggle
-                id="dropdown-button-dark-example1"
-                variant="secondary"
-              >
-                Trinity Saloon, Kharadi
-              </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1" active>
-                  Action
-                </Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Divider />
-
-                <Dropdown.Item href="#/action-4">Separated link</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-            <div className="imageicon">
-              <p className="icontext">KB</p>
-            </div>
           </Navbar.Brand>
         </Container>
       </Navbar>
@@ -155,6 +134,7 @@ function SideBar() {
                         appearance="heading_m_medium"
                         color="white"
                       />
+                      <br/>
                       <Text
                         text="Track your monthly expenses, including utilities,
                       salaries, and supplies. Stay on top of finances and make
@@ -212,6 +192,7 @@ function SideBar() {
                         appearance="heading_m_medium"
                         color="white"
                       />
+                      <br/>
                       <Text
                         text="Manage your employee information, including their
                       salaries, commissions, and employment status. Also track

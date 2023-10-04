@@ -1,4 +1,4 @@
-import { Col, FloatingLabel, Form, Row } from "react-bootstrap";
+import { Col, FloatingLabel, Form, Image, Row } from "react-bootstrap";
 import ButtonComponent from "../buttonC";
 import "./refer.css";
 import Text from "../text";
@@ -8,17 +8,14 @@ const Refer = () => {
     <Row className="m-0 mt-5 align-items-center">
       <Col md={6} className="p-0  ">
         <div className="refer-section">
-          <h5>Refer your Salon Business Partners</h5>
-          <p>
-            Whether you are a small independent salon or a large spa chain, our
-            salon management app can help you achieve your business goals by
-            streamlining your operations, improving your customer engagement,
-            and increasing your profitability.
-          </p>
-          <p>
-            Thank you for considering our software, and we look forward to
-            helping you grow your business.
-          </p>
+        <Text text="Refer your Salon Business Partners" appearance="heading_m_medium" color="white" />
+            <br/>
+          <Text text="Whether you are a small independent salon or a large spa chain, our " appearance="body_s_regular" color="white" />
+          <Text text="salon management app can help you achieve your business goals by" appearance="body_s_regular" color="white" />
+          <Text text="streamlining your operations, improving your customer engagement," appearance="body_s_regular" color="white" />
+          <Text text="and increasing your profitability." appearance="body_s_regular" color="white" />
+          <Text text="Thank you for considering our software, and we look forward to" appearance="body_s_regular" color="white" />
+          <Text text="helping you grow your business." appearance="body_s_regular" color="white" />
 
           <Row>
             <Col>
@@ -29,7 +26,9 @@ const Refer = () => {
                 className="iterested-heading"
               />
             </Col>
-            <Col className="text-md-end">col2</Col>
+            <Col className="text-md-end imageQR">
+              <Image src="/QR.png"/>
+            </Col>
           </Row>
         </div>
       </Col>
