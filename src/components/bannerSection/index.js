@@ -17,7 +17,7 @@ const BannerSection = () =>{
                    </Col>
                     <Col md={7} className="d-flex listcolumn">
                     <ul>
-                    <ListGroup.Item className="listgroup ">
+                    <ListGroup.Item className="listgroup">
                     <div className="d-flex ">
                     <Icon className="listicon" ic={<IcBannersmicon />}/>
                     <Text
